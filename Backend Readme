@@ -1,0 +1,36 @@
+# BharatIntent-X E58/E65 Backend Source
+
+This directory contains the Python source code for the BharatIntent-X E58 inference API and E65 Intent Reliability Guard.
+
+## Included files
+
+- `ml/e61_bharatintent_engine.py` — E58 inference engine.
+- `ml/e64_bharatintent_api.py` — FastAPI serving API.
+- `ml/e65_reliability_guard.py` — Separate reliability assessment layer.
+- `ml/test_e65_reliability_guard.py` — E65 unit tests.
+- `requirements.txt` — Python dependencies.
+
+## Model artifacts
+
+The model artifacts are intentionally not included in this source-only package.
+
+The inference engine expects locally available artifacts, including:
+- MuRIL encoder files.
+- Neural classification head weights.
+- Character TF-IDF/SVM model files.
+
+Inference requires these artifacts to be provided separately in the expected deployment directory structure.
+
+## Run
+
+From the backend deployment root, activate the Python environment and start the API using the project's configured model paths and environment variables.
+
+```powershell
+python -m uvicorn ml.e64_bharatintent_api:app --host 127.0.0.1 --port 8000
+```
+
+The E58 API and E65 guard are separate from the React frontend.
+
+## Important
+
+This is source code, not a self-contained model deployment. Model artifacts and their access arrangements are required for live inference.
