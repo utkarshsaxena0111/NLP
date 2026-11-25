@@ -1,0 +1,786 @@
+[
+  {
+    "id": 0,
+    "name": "datetime_query",
+    "displayName": "Date & Time Query",
+    "category": "Utilities",
+    "description": "Querying current date, time, day of week, or calendar month across timezones.",
+    "isOutOfScope": false,
+    "sampleQueries": {
+      "hindi": "नमस्ते अब क्या समय हो गया है",
+      "romanized": "bhaarat mein vartamaan samay kya hai",
+      "english": "What is the current time in Mumbai?",
+      "hinglish": "Abhi time kya hua hai?"
+    }
+  },
+  {
+    "id": 1,
+    "name": "iot_lighting_color",
+    "displayName": "Smart Lighting: Color Control",
+    "category": "Smart Home IoT",
+    "description": "Adjusting ambient smart lighting hues and colored scene bulbs.",
+    "isOutOfScope": false,
+    "sampleQueries": {
+      "hindi": "प्रकाश का रंग लाल पर सेट करें",
+      "romanized": "prakash ka rang lal par set kare",
+      "english": "Change the living room lights to red.",
+      "hinglish": "Living room ki light blue kardo."
+    }
+  },
+  {
+    "id": 2,
+    "name": "transport_ticket_book",
+    "displayName": "Train & Travel Booking",
+    "category": "Travel & Transport",
+    "description": "Booking train, coach, or flight reservations.",
+    "isOutOfScope": false,
+    "sampleQueries": {
+      "hindi": "दिल्ली से देहरादून के लिए ट्रेन टिकट बुक करो",
+      "romanized": "dilli se dehraadun ke lie ek train ticket book karo",
+      "english": "Book a chair car AC train ticket from Delhi to Dehradun.",
+      "hinglish": "Kal ke liye train ticket book kardo."
+    }
+  },
+  {
+    "id": 3,
+    "name": "food_order_status",
+    "displayName": "Food Delivery Tracking",
+    "category": "Food & Dining",
+    "description": "Inquiring about restaurant order status, takeout, or delivery ETA.",
+    "isOutOfScope": false,
+    "sampleQueries": {
+      "hindi": "मेरा खाने का ऑर्डर कब तक पहुँचने वाला है",
+      "romanized": "khana ka order kab tak aayega",
+      "english": "When will my Domino pizza order arrive?",
+      "hinglish": "Pizza delivery kab tak pahunchega?"
+    }
+  },
+  {
+    "id": 4,
+    "name": "finance_stock_quote",
+    "displayName": "Stock Market & Equity Quote",
+    "category": "Finance",
+    "description": "Inquiring stock prices, equity indices, or market trends.",
+    "isOutOfScope": false,
+    "sampleQueries": {
+      "hindi": "रिलायंस का वर्तमान स्टॉक मूल्य क्या है",
+      "romanized": "reliance ka stock price kya hai",
+      "english": "What is the current share price of Reliance?",
+      "hinglish": "Top 10 stocks ka rate dikhao."
+    }
+  },
+  {
+    "id": 5,
+    "name": "conversational_greeting",
+    "displayName": "Greeting & System Chitchat",
+    "category": "Chitchat",
+    "description": "Casual conversational greetings, wellness check, and assistant pleasantries.",
+    "isOutOfScope": false,
+    "sampleQueries": {
+      "hindi": "नमस्ते आज आप कैसे हैं?",
+      "romanized": "aap kaise ho bhai",
+      "english": "Hello, how are you doing today?",
+      "hinglish": "Hey buddy kya chal raha hai?"
+    }
+  },
+  {
+    "id": 6,
+    "name": "events_cultural_discovery",
+    "displayName": "Events & Cultural Discovery",
+    "category": "Knowledge & Lifestyle",
+    "description": "Discovering local festivals, city carnivals, exhibitions, or holidays.",
+    "isOutOfScope": false,
+    "sampleQueries": {
+      "hindi": "हमारे देश के लिए कोई विशेष अवकाश खोज रहे हैं",
+      "romanized": "aaj shahar mein kya event chal raha hai",
+      "english": "Are there any cultural events or festivals in town tonight?",
+      "hinglish": "Shehar me koi carnival ya mela hai kya?"
+    }
+  },
+  {
+    "id": 7,
+    "name": "music_dislike_rating",
+    "displayName": "Music Feedback: Dislike Track",
+    "category": "Media & Entertainment",
+    "description": "Marking current song as disliked or requesting not to play again.",
+    "isOutOfScope": false,
+    "sampleQueries": {
+      "hindi": "मुझे इस गीत से नफरत है",
+      "romanized": "mujhe yeh gana bilkul pasand nahi",
+      "english": "I do not like this song, please skip it.",
+      "hinglish": "Yeh track bohot bekaar hai change karo."
+    }
+  },
+  {
+    "id": 8,
+    "name": "iot_plug_off",
+    "displayName": "Smart Plug: Power Off",
+    "category": "Smart Home IoT",
+    "description": "Turning off smart sockets, power strips, or connected appliances.",
+    "isOutOfScope": false,
+    "sampleQueries": {
+      "hindi": "स्मार्ट सॉकेट बंद करें",
+      "romanized": "sabhee power plug band kar do",
+      "english": "Turn off all smart plug sockets.",
+      "hinglish": "Wemo smart socket off kardo."
+    }
+  },
+  {
+    "id": 9,
+    "name": "cooking_recipe_lookup",
+    "displayName": "Recipe & Culinary Advice",
+    "category": "Food & Dining",
+    "description": "Requesting food preparation recipes, ingredients, and cooking steps.",
+    "isOutOfScope": false,
+    "sampleQueries": {
+      "hindi": "मुझे तंदूरी चिकन की विधि दिखाओ",
+      "romanized": "tandoori chicken banane ki vidhi batao",
+      "english": "Show me the step-by-step recipe for tandoori chicken.",
+      "hinglish": "Paneer butter masala kaise banate hain?"
+    }
+  },
+  {
+    "id": 10,
+    "name": "finance_currency_exchange",
+    "displayName": "Currency Exchange Rate",
+    "category": "Finance",
+    "description": "Calculating forex exchange rates between currencies.",
+    "isOutOfScope": false,
+    "sampleQueries": {
+      "hindi": "रुपये और डॉलर का एक्सचेंज रेट क्या है",
+      "romanized": "dollar aur rupee ka exchange rate kya chal raha hai",
+      "english": "What is the current USD to INR exchange rate?",
+      "hinglish": "Euro to Rupee kitna hai abhi?"
+    }
+  },
+  {
+    "id": 11,
+    "name": "transport_traffic_status",
+    "displayName": "Traffic & Route Congestion",
+    "category": "Travel & Transport",
+    "description": "Checking live road traffic congestion, bottlenecks, or drive times.",
+    "isOutOfScope": false,
+    "sampleQueries": {
+      "hindi": "सेंट्रल पार्क रोड पर वर्तमान में यातायात कैसा है",
+      "romanized": "highway par traffic kaisa hai",
+      "english": "What is the traffic congestion on Central Park road right now?",
+      "hinglish": "Airport route par jam to nahi hai?"
+    }
+  },
+  {
+    "id": 12,
+    "name": "device_chitchat_fallback",
+    "displayName": "Device Assistant Dialogue",
+    "category": "Chitchat",
+    "description": "General companion remarks, personal updates, or open-ended banter.",
+    "isOutOfScope": false,
+    "sampleQueries": {
+      "hindi": "ओली मैं कल छुट्टी ले रहा हूँ",
+      "romanized": "tumhaara din kaisa chal raha hai",
+      "english": "Olly, I am taking a leave tomorrow.",
+      "hinglish": "Kal mera holiday hai maze karenge."
+    }
+  },
+  {
+    "id": 13,
+    "name": "weather_forecast_query",
+    "displayName": "Weather Forecast & Climate",
+    "category": "Utilities",
+    "description": "Querying ambient temperature, precipitation, storms, or forecasts.",
+    "isOutOfScope": false,
+    "sampleQueries": {
+      "hindi": "शनिवार का मौसम पूर्वानुमान क्या है?",
+      "romanized": "kya kal barish hone wali hai",
+      "english": "What is the weather forecast for Saturday?",
+      "hinglish": "Kal subah temperature kitna hoga?"
+    }
+  },
+  {
+    "id": 14,
+    "name": "audio_volume_increase",
+    "displayName": "Audio: Increase Volume",
+    "category": "Media & Entertainment",
+    "description": "Raising speaker volume, audio gain, or speech loudness.",
+    "isOutOfScope": false,
+    "sampleQueries": {
+      "hindi": "आवाज़ बढ़ाओ, जोर से बोलो",
+      "romanized": "media volume bada do",
+      "english": "Turn up the speaker volume please.",
+      "hinglish": "Volume thoda loud karo sunai nahi de raha."
+    }
+  },
+  {
+    "id": 15,
+    "name": "contacts_add_edit",
+    "displayName": "Contacts: Add or Edit",
+    "category": "Communication & Social",
+    "description": "Saving new phone contacts, updating emails, or modifying directory.",
+    "isOutOfScope": false,
+    "sampleQueries": {
+      "hindi": "मेरे संपर्कों को स्टोर करें",
+      "romanized": "anupam ka number contact list me save karo",
+      "english": "Save this email address to my contact book.",
+      "hinglish": "Contact me naya phone number add kardo."
+    }
+  },
+  {
+    "id": 16,
+    "name": "food_order_create",
+    "displayName": "Food Order: Place New Order",
+    "category": "Food & Dining",
+    "description": "Ordering restaurant meals, groceries, or food delivery.",
+    "isOutOfScope": false,
+    "sampleQueries": {
+      "hindi": "डोमिनोज से दो पिज्जा ऑर्डर करो",
+      "romanized": "kuch tasty khana order kardo",
+      "english": "Order two margherita pizzas from Dominoes.",
+      "hinglish": "Biryani order kardo Swiggy se."
+    }
+  },
+  {
+    "id": 17,
+    "name": "contacts_query",
+    "displayName": "Contacts: Lookup Contact",
+    "category": "Communication & Social",
+    "description": "Retrieving contact card, phone number, or address of an individual.",
+    "isOutOfScope": false,
+    "sampleQueries": {
+      "hindi": "अमित का फोन नंबर क्या है?",
+      "romanized": "anupam ki contact info nikalo",
+      "english": "What is the contact information and phone number for Amit?",
+      "hinglish": "Rahul ka mobile number share karo."
+    }
+  },
+  {
+    "id": 18,
+    "name": "iot_lighting_brightness_up",
+    "displayName": "Smart Lighting: Increase Brightness",
+    "category": "Smart Home IoT",
+    "description": "Increasing lighting level or turning lights brighter.",
+    "isOutOfScope": false,
+    "sampleQueries": {
+      "hindi": "यहाँ अंधेरा है लाइट की रोशनी बढ़ा दो",
+      "romanized": "light ki brightness badha do",
+      "english": "It is dark here, increase the room light brightness.",
+      "hinglish": "Lights thodi tez kardo dim lag rahi hai."
+    }
+  },
+  {
+    "id": 19,
+    "name": "places_local_search",
+    "displayName": "Local Places & Venue Search",
+    "category": "Travel & Transport",
+    "description": "Locating local supermarkets, agricultural stalls, cafes, or shops.",
+    "isOutOfScope": false,
+    "sampleQueries": {
+      "hindi": "आस-पास कोई कृषि बाज़ार खोजें",
+      "romanized": "paas me coffee shop kahan hai",
+      "english": "Find the nearest local farmer market or grocery store.",
+      "hinglish": "Nearby pharmacy ya medical store kahan hai?"
+    }
+  },
+  {
+    "id": 20,
+    "name": "audio_playback_resume",
+    "displayName": "Audio: Resume Playback",
+    "category": "Media & Entertainment",
+    "description": "Resuming paused audiobooks, podcast episodes, or audio media.",
+    "isOutOfScope": false,
+    "sampleQueries": {
+      "hindi": "चाणक्य नीति ऑडियो फिर से चालू करो",
+      "romanized": "audio resume karo",
+      "english": "Resume playing Chanakya Niti audiobook.",
+      "hinglish": "Podcast play karo jahan roka tha."
+    }
+  },
+  {
+    "id": 21,
+    "name": "list_item_add",
+    "displayName": "Lists: Add Item to List",
+    "category": "Productivity & Lists",
+    "description": "Adding grocery entries, shopping items, or notes to an active list.",
+    "isOutOfScope": false,
+    "sampleQueries": {
+      "hindi": "मेरी ख़रीददारी सूची में दूध जोड़ें",
+      "romanized": "shopping list me bread add karo",
+      "english": "Add milk and butter to my grocery shopping checklist.",
+      "hinglish": "To-do list me car wash task daal do."
+    }
+  },
+  {
+    "id": 22,
+    "name": "news_headlines_query",
+    "displayName": "News & Current Affairs",
+    "category": "Knowledge & Lifestyle",
+    "description": "Fetching top headlines, political news, or world sports updates.",
+    "isOutOfScope": false,
+    "sampleQueries": {
+      "hindi": "आज की मुख्य ताज़ा खबरें क्या हैं?",
+      "romanized": "aaj ki breaking news batao",
+      "english": "What are the top news headlines for India today?",
+      "hinglish": "Latest tech aur business news sunao."
+    }
+  },
+  {
+    "id": 23,
+    "name": "iot_plug_on",
+    "displayName": "Smart Plug: Power On",
+    "category": "Smart Home IoT",
+    "description": "Activating smart switch sockets or powering on plugged appliances.",
+    "isOutOfScope": false,
+    "sampleQueries": {
+      "hindi": "कृपया स्मार्ट सॉकेट चालू करें",
+      "romanized": "vemo smart plug on kardo",
+      "english": "Please turn on the smart power socket for TV.",
+      "hinglish": "Smart switch chalu kardo geyser ke liye."
+    }
+  },
+  {
+    "id": 24,
+    "name": "general_joke_query",
+    "displayName": "Entertainment: Tell a Joke",
+    "category": "Chitchat",
+    "description": "Requesting witty jokes, comedy humor, or funny puns.",
+    "isOutOfScope": false,
+    "sampleQueries": {
+      "hindi": "एक मजेदार चुटकुला सुनाओ",
+      "romanized": "koi accha sa joke sunao",
+      "english": "Tell me a funny joke to brighten my afternoon.",
+      "hinglish": "Ek mast comedy joke sunao yaar."
+    }
+  },
+  {
+    "id": 25,
+    "name": "general_define_meaning",
+    "displayName": "Dictionary & Word Definition",
+    "category": "Knowledge & Facts",
+    "description": "Looking up vocabulary definitions, synonyms, or word meanings.",
+    "isOutOfScope": false,
+    "sampleQueries": {
+      "hindi": "हिचकिचाहट का क्या अर्थ है?",
+      "romanized": "santra ki paribhasha kya hai",
+      "english": "What is the exact definition of hesitancy?",
+      "hinglish": "Ephemeral ka meaning kya hota hai?"
+    }
+  },
+  {
+    "id": 26,
+    "name": "social_feed_query",
+    "displayName": "Social Media: Check Notifications",
+    "category": "Communication & Social",
+    "description": "Checking unread direct messages, friend posts, or feed updates.",
+    "isOutOfScope": false,
+    "sampleQueries": {
+      "hindi": "क्या मेरे पास सोशल मीडिया पर कोई नया मैसेज है?",
+      "romanized": "social media notifications check karo",
+      "english": "Do I have any new direct messages on Instagram or Twitter?",
+      "hinglish": "Facebook par kisi ne tag kiya hai kya?"
+    }
+  },
+  {
+    "id": 27,
+    "name": "music_track_repeat",
+    "displayName": "Music: Repeat Track",
+    "category": "Media & Entertainment",
+    "description": "Enabling loop or repeating the currently playing audio track.",
+    "isOutOfScope": false,
+    "sampleQueries": {
+      "hindi": "यह गाना दोबारा चलाओ",
+      "romanized": "ek baar fir yehi gana bajao",
+      "english": "Please repeat the current music track on loop.",
+      "hinglish": "Loop par laga do ye gaana wapis."
+    }
+  },
+  {
+    "id": 28,
+    "name": "audio_preset_setting",
+    "displayName": "Audio: Sound Profile Preset",
+    "category": "Media & Entertainment",
+    "description": "Switching equalizer profile, outdoor mode, or speaker presets.",
+    "isOutOfScope": false,
+    "sampleQueries": {
+      "hindi": "साउंड प्रोफ़ाइल को आउटडोर मोड में बदलें",
+      "romanized": "audio preset outdoor mode me daalo",
+      "english": "Switch the audio equalizer profile to bass boost.",
+      "hinglish": "Speaker profile change karke theater mode karo."
+    }
+  },
+  {
+    "id": 29,
+    "name": "calendar_event_remove",
+    "displayName": "Calendar: Remove Event",
+    "category": "Productivity & Lists",
+    "description": "Deleting scheduled meetings, dentist appointments, or calendar events.",
+    "isOutOfScope": false,
+    "sampleQueries": {
+      "hindi": "आज के शेड्यूल से डेंटिस्ट अपॉइंटमेंट हटा दें",
+      "romanized": "aaj ka meeting cancel kardo calendar se",
+      "english": "Remove the dentist appointment from my calendar schedule.",
+      "hinglish": "Tomorrow 4 PM calendar invite delete kardo."
+    }
+  },
+  {
+    "id": 30,
+    "name": "iot_lighting_dim",
+    "displayName": "Smart Lighting: Dim Lights",
+    "category": "Smart Home IoT",
+    "description": "Dimming ambient room illumination or lowering night bulb intensity.",
+    "isOutOfScope": false,
+    "sampleQueries": {
+      "hindi": "रोशनी बहुत तेज़ है इसे कम करें",
+      "romanized": "lights ko thoda dim kardo",
+      "english": "The lights are too glaring, dim them down to 20 percent.",
+      "hinglish": "Bedroom light dim kardo sone ka time ho gaya."
+    }
+  },
+  {
+    "id": 31,
+    "name": "calendar_schedule_query",
+    "displayName": "Calendar: Inquire Schedule",
+    "category": "Productivity & Lists",
+    "description": "Checking upcoming meetings, conference calls, or weekly calendar.",
+    "isOutOfScope": false,
+    "sampleQueries": {
+      "hindi": "अगले रविवार को मेरा क्या कार्यक्रम है?",
+      "romanized": "kal ka mera schedule kya hai",
+      "english": "What meetings do I have scheduled on my calendar next week?",
+      "hinglish": "Friday ko summit meeting kitne baje hai?"
+    }
+  },
+  {
+    "id": 32,
+    "name": "communication_email_send",
+    "displayName": "Email: Compose & Send",
+    "category": "Communication & Social",
+    "description": "Composing and dispatching outbound emails to recipients.",
+    "isOutOfScope": false,
+    "sampleQueries": {
+      "hindi": "अंजलि को ईमेल भेजें कि मैं रास्ते में हूँ",
+      "romanized": "boss ko email bhej do",
+      "english": "Send an email to Anjali saying I am on my way.",
+      "hinglish": "Email send karo updates ke saath."
+    }
+  },
+  {
+    "id": 33,
+    "name": "iot_vacuum_start",
+    "displayName": "Smart Vacuum: Start Cleaning",
+    "category": "Smart Home IoT",
+    "description": "Commanding robotic vacuum cleaner or Roomba to begin sweeping floors.",
+    "isOutOfScope": false,
+    "sampleQueries": {
+      "hindi": "वैक्यूम क्लीनर चालू करो और रसोई साफ करो",
+      "romanized": "roomba start karo drawing room ke liye",
+      "english": "Turn on the robot vacuum cleaner and clean the living room.",
+      "hinglish": "Vacuum start kardo poore ghar me sweep karna hai."
+    }
+  },
+  {
+    "id": 34,
+    "name": "audio_volume_decrease",
+    "displayName": "Audio: Decrease Volume",
+    "category": "Media & Entertainment",
+    "description": "Lowering speaker volume, quietening music, or lowering speech gain.",
+    "isOutOfScope": false,
+    "sampleQueries": {
+      "hindi": "आवाज़ थोड़ी कम करो",
+      "romanized": "volume 20 percent par set karo",
+      "english": "Turn down the speaker volume, it is too loud.",
+      "hinglish": "Voice thodi dheeme karo please."
+    }
+  },
+  {
+    "id": 35,
+    "name": "media_radio_stream",
+    "displayName": "Radio: Stream Station",
+    "category": "Media & Entertainment",
+    "description": "Tuning into FM radio stations, Akashvani, or live internet radio.",
+    "isOutOfScope": false,
+    "sampleQueries": {
+      "hindi": "आकाशवाणी रेडियो चला दो",
+      "romanized": "radio mirchi play karo",
+      "english": "Tune in to All India Radio Akashvani channel.",
+      "hinglish": "Vividh Bharati live stream start karo."
+    }
+  },
+  {
+    "id": 36,
+    "name": "cooking_tips_recipe",
+    "displayName": "Cooking: Culinary Techniques",
+    "category": "Food & Dining",
+    "description": "Inquiring specific food preservation, frying tips, or culinary hacks.",
+    "isOutOfScope": false,
+    "sampleQueries": {
+      "hindi": "पालक पनीर में हरा रंग कैसे बनाए रखें?",
+      "romanized": "crispy snacks bina oil ke kaise banaye",
+      "english": "How do I maintain the bright green color in palak paneer?",
+      "hinglish": "Bhature me oil kam soak ho uski tip batao."
+    }
+  },
+  {
+    "id": 37,
+    "name": "time_convert_timezone",
+    "displayName": "Timezone: Time Difference Query",
+    "category": "Utilities",
+    "description": "Converting clock time across IST, EST, UTC, or world cities.",
+    "isOutOfScope": false,
+    "sampleQueries": {
+      "hindi": "इस समय को भारतीय मानक समय (IST) में बदलें",
+      "romanized": "new york aur delhi me kitne time ka farak hai",
+      "english": "Convert 8 PM Eastern time into Indian Standard Time.",
+      "hinglish": "London me abhi kitna time baj raha hoga?"
+    }
+  },
+  {
+    "id": 38,
+    "name": "general_math_calculate",
+    "displayName": "Math: Mental Calculation",
+    "category": "Knowledge & Facts",
+    "description": "Solving arithmetic multiplication, percentages, or division questions.",
+    "isOutOfScope": false,
+    "sampleQueries": {
+      "hindi": "एक हज़ार को बारह से गुणा करो",
+      "romanized": "teees guna bavan kitna hota hai",
+      "english": "What is twenty-three multiplied by fifty-two?",
+      "hinglish": "15 percent of 4500 calculate karke batao."
+    }
+  },
+  {
+    "id": 39,
+    "name": "iot_lighting_off",
+    "displayName": "Smart Lighting: Switch Off",
+    "category": "Smart Home IoT",
+    "description": "Turning off ambient home lights, lamps, or ceiling LEDs.",
+    "isOutOfScope": false,
+    "sampleQueries": {
+      "hindi": "रसोईघर की सभी लाइटें बंद कर दें",
+      "romanized": "bedroom ki light band kar do",
+      "english": "Please turn off the kitchen and bedroom lights.",
+      "hinglish": "Poore ghar ki lights off kardo good night."
+    }
+  },
+  {
+    "id": 40,
+    "name": "iot_lighting_on",
+    "displayName": "Smart Lighting: Switch On",
+    "category": "Smart Home IoT",
+    "description": "Turning on room lights, entrance lamps, or garage LEDs.",
+    "isOutOfScope": false,
+    "sampleQueries": {
+      "hindi": "मास्टर बेडरूम के दोनों लैंप चालू कर दो",
+      "romanized": "garage light chalu karo car park karni hai",
+      "english": "Turn on both lamps in the master bedroom.",
+      "hinglish": "Hallway ki light on kardo andhera hai."
+    }
+  },
+  {
+    "id": 41,
+    "name": "transport_train_schedule",
+    "displayName": "Transport: Train Schedule & Fare",
+    "category": "Travel & Transport",
+    "description": "Inquiring train timings, platform numbers, or ticket fares.",
+    "isOutOfScope": false,
+    "sampleQueries": {
+      "hindi": "दिल्ली जाने वाली ट्रेन का समय क्या है?",
+      "romanized": "rajdhani express ka ticket fare kitna hai",
+      "english": "What is the departure timing and platform for the express train?",
+      "hinglish": "Train ka arrival time kab ka hai?"
+    }
+  },
+  {
+    "id": 42,
+    "name": "music_rating_save",
+    "displayName": "Music: Like & Save Preference",
+    "category": "Media & Entertainment",
+    "description": "Saving favorite music tracks, marking songs as preferred.",
+    "isOutOfScope": false,
+    "sampleQueries": {
+      "hindi": "मेरी संगीत प्राथमिकताएं सहेजें",
+      "romanized": "ye gana favorite list me save karo",
+      "english": "Save this song to my favorite high-rating playlist.",
+      "hinglish": "Track pasand aaya library me add kar lo."
+    }
+  },
+  {
+    "id": 43,
+    "name": "communication_email_query",
+    "displayName": "Email: Check Inbox & Messages",
+    "category": "Communication & Social",
+    "description": "Checking unread emails, sender headers, or email digests.",
+    "isOutOfScope": false,
+    "sampleQueries": {
+      "hindi": "पिछले सप्ताह के सभी नए ईमेल दिखाएं",
+      "romanized": "mera email inbox check karo",
+      "english": "Show me the subject lines of all unread emails from this week.",
+      "hinglish": "Koi urgent email aya hai kya check karo."
+    }
+  },
+  {
+    "id": 44,
+    "name": "music_playback_start",
+    "displayName": "Music: Play Song / Artist",
+    "category": "Media & Entertainment",
+    "description": "Requesting playback of specific songs, artists, or genres.",
+    "isOutOfScope": false,
+    "sampleQueries": {
+      "hindi": "अरिजीत सिंह का तुम ही हो गाना बजाओ",
+      "romanized": "arijit singh ke hit songs bajao",
+      "english": "Play Tum Hi Ho by Arijit Singh on Spotify.",
+      "hinglish": "Acoustic guitar playlist play kardo."
+    }
+  },
+  {
+    "id": 45,
+    "name": "assistant_silence_mute",
+    "displayName": "Assistant: Silence / Stop Speaking",
+    "category": "Utilities",
+    "description": "Instructing assistant to mute, stop speaking, or enter quiet mode.",
+    "isOutOfScope": false,
+    "sampleQueries": {
+      "hindi": "शांत रहो, बात मत करो",
+      "romanized": "kuch mat bolo shant raho",
+      "english": "Be quiet and stop talking until called again.",
+      "hinglish": "Mute ho jao abhi aawaz mat karo."
+    }
+  },
+  {
+    "id": 46,
+    "name": "social_post_tweet",
+    "displayName": "Social Media: Post & Tweet",
+    "category": "Communication & Social",
+    "description": "Publishing social updates, tweets, or corporate feedback posts.",
+    "isOutOfScope": false,
+    "sampleQueries": {
+      "hindi": "इसे मेरे फेसबुक और ट्विटर पर पोस्ट करें",
+      "romanized": "flipkart par complaint tweet kardo",
+      "english": "Tweet a complaint to customer care regarding my delayed package.",
+      "hinglish": "Status update post kardo Facebook profile pe."
+    }
+  },
+  {
+    "id": 47,
+    "name": "fact_qa_general",
+    "displayName": "Knowledge: General Trivia & QA",
+    "category": "Knowledge & Facts",
+    "description": "Answering factual trivia about capitals, geography, celebrities, or history.",
+    "isOutOfScope": false,
+    "sampleQueries": {
+      "hindi": "भारत की राजधानी क्या है?",
+      "romanized": "sabse lambi nadi kaunsi hai duniya me",
+      "english": "What is the capital city of India and its population?",
+      "hinglish": "Mount Everest ki height kitni hai?"
+    }
+  },
+  {
+    "id": 48,
+    "name": "alarm_reminder_set",
+    "displayName": "Alarm & Reminders: Set Alert",
+    "category": "Utilities",
+    "description": "Setting time-based morning alarms, wakeup calls, or task reminders.",
+    "isOutOfScope": false,
+    "sampleQueries": {
+      "hindi": "कल सुबह 7 बजे का अलार्म लगा दो",
+      "romanized": "kal subah 7 baje ka alarm set karo",
+      "english": "Set an alarm for 7 AM tomorrow morning.",
+      "hinglish": "Kal morning meeting ka reminder daal do."
+    }
+  },
+  {
+    "id": 49,
+    "name": "alarm_reminder_remove",
+    "displayName": "Alarm & Reminders: Delete Alarm",
+    "category": "Utilities",
+    "description": "Disabling or deleting active alarms, alerts, or wakeup timers.",
+    "isOutOfScope": false,
+    "sampleQueries": {
+      "hindi": "कृपया कल सुबह का अलार्म हटा दें",
+      "romanized": "subah ka alarm delete kardo",
+      "english": "Cancel all alarms set for tomorrow morning.",
+      "hinglish": "Alarm disable kardo kal chhutti hai."
+    }
+  },
+  {
+    "id": 50,
+    "name": "list_item_remove",
+    "displayName": "Lists: Remove Item from List",
+    "category": "Productivity & Lists",
+    "description": "Deleting items, shopping entries, or finished notes from lists.",
+    "isOutOfScope": false,
+    "sampleQueries": {
+      "hindi": "शॉपिंग लिस्ट से आइटम नंबर तीन हटा दो",
+      "romanized": "grocery list se sabzi hata do",
+      "english": "Remove item number three from my shopping checklist.",
+      "hinglish": "To-do list se completed task clear kardo."
+    }
+  },
+  {
+    "id": 51,
+    "name": "transport_taxi_book",
+    "displayName": "Cab & Ride: Hail Taxi / Uber",
+    "category": "Travel & Transport",
+    "description": "Booking taxi rides, hailing cabs, or checking Uber/Ola fares.",
+    "isOutOfScope": false,
+    "sampleQueries": {
+      "hindi": "मुझे एयरपोर्ट जाने के लिए कैब बुक करो",
+      "romanized": "ola cab book kardo abhi ke liye",
+      "english": "Book an Uber cab to pick me up right now.",
+      "hinglish": "Taxi bula do office jana hai."
+    }
+  },
+  {
+    "id": 52,
+    "name": "media_movies_query",
+    "displayName": "Cinema & Film Showtimes",
+    "category": "Media & Entertainment",
+    "description": "Inquiring cinema movies, theatre showtimes, or movie reviews.",
+    "isOutOfScope": false,
+    "sampleQueries": {
+      "hindi": "इस सप्ताहांत सिनेमाघरों में कौन सी फ़िल्में चल रही हैं?",
+      "romanized": "nearby theatre me kaunsi movie lagi hai",
+      "english": "What critically acclaimed movies are screening this weekend?",
+      "hinglish": "Cinema hall me showtime check karo."
+    }
+  },
+  {
+    "id": 53,
+    "name": "music_identify_query",
+    "displayName": "Music: Identify Song / Artist",
+    "category": "Media & Entertainment",
+    "description": "Identifying currently playing song titles, singer names, or musical genre.",
+    "isOutOfScope": false,
+    "sampleQueries": {
+      "hindi": "रेडियो पर अभी कौन सा गाना चल रहा है?",
+      "romanized": "is gaane ka singer kaun hai",
+      "english": "What song is currently playing on the radio and who is the singer?",
+      "hinglish": "Track identify karke batao artist ka naam."
+    }
+  },
+  {
+    "id": 54,
+    "name": "list_notes_view",
+    "displayName": "Lists: View Checklist & Notes",
+    "category": "Productivity & Lists",
+    "description": "Reviewing active to-do items, memo notes, or shopping list entries.",
+    "isOutOfScope": false,
+    "sampleQueries": {
+      "hindi": "आज की मेरी कार्य सूची में क्या-क्या है?",
+      "romanized": "meri to-do list me kya likha hai",
+      "english": "What items are currently on my active daily task checklist?",
+      "hinglish": "Shopping list read karke sunao."
+    }
+  },
+  {
+    "id": 55,
+    "name": "out_of_scope_unsupported",
+    "displayName": "Out of Scope / Unsupported Intent",
+    "category": "Out of Scope",
+    "description": "Queries outside assistant domain, unrecognized capabilities, or ambiguous requests.",
+    "isOutOfScope": true,
+    "sampleQueries": {
+      "hindi": "ओली मुझे अभी एक कप गर्म कॉफ़ी बना कर दो",
+      "romanized": "mujhe ek cup coffee bana kar do",
+      "english": "Make me a fresh cup of hot espresso coffee right now.",
+      "hinglish": "Can you fly me to Mars on a spaceship tomorrow?"
+    }
+  }
+]

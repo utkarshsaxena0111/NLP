@@ -1,0 +1,23 @@
+
+node_modules/
+dist/
+.env
+.env.*
+!.env.example
+.venv/
+venv/
+__pycache__/
+*.pyc
+*.pt
+*.pth
+*.joblib
+*.safetensors
+*.csv
+.DS_Store
+# Legacy E12 artifacts
+BharatIntentX_E12_Transfer/
+
+# Legacy simulated E46 backend
+backend/
+
+E58_FRONTEND_PATCH_NOTES.txt
